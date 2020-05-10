@@ -3,6 +3,7 @@ import {Button, View, Text, FlatList} from 'react-native';
 
 export default function HomeScreen({navigation}) {
   const [isLoading, setLoading] = useState(true);
+  const [weekday, setWeekday] = useState('');
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -10,7 +11,8 @@ export default function HomeScreen({navigation}) {
         var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         return weekday[this.getDay()];
     }   
-    console.log(new Date().getWeekDay()); // this logs the current day of the week successfully
+    setWeekday(new Date().getWeekDay()); 
+    
     fetch('https://reactnative.dev/movies.json')
       .then(response => response.json())
       .then(json => {
