@@ -1,0 +1,38 @@
+{
+    "data": [
+        {
+            "name": "Oscar's",
+            "type": "beer",
+            "day": "Wednesday",
+            "specials": [
+                {
+                    "id": 1,
+                    "restaurant": "Oscar's",
+                    "title": "1/2 price burger",
+                    "every_day": false,
+                    "day": "Tuesday",
+                    "created_at": "1/2/2020"
+                },
+                {
+                    "id": 2,
+                    "restaurant": "Oscar's",
+                    "title": "1/2 price burger",
+                    "every_day": false,
+                    "day": "Thursday",
+                    "created_at": "1/2/2020"
+                },
+                {
+                    "id": 3,
+                    "restaurant": "Oscar's",
+                    "title": "1/2 price burger",
+                    "every_day": false,
+                    "day": "Saturday",
+                    "created_at": "1/2/2020"
+                }
+            ]
+        }
+    ]
+}
+
+
+

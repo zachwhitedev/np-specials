@@ -11,6 +11,7 @@ import DaySpecials from './components/DaySpecials';
 const Stack = createStackNavigator();
 
 function App() {
+
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Week">
